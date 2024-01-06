@@ -27,7 +27,9 @@ git clone https://github.com/linmeishang/docker-mindstep.git
 docker build .
 ```
 
-## Step 3: Run a container using the built image. Replace <image-id> with the image-id you have built.
+## Step 3: Run a container using the built image. 
+
+Replace < image-id > with the your image-id.
 
 ```
 docker run <image-id>
@@ -41,7 +43,9 @@ docker ps -all
 
 Step 5 - Step 7 help you to navigate into the container to check if everything works as expected. You can also skip them and directly jump to Step 8. 
 
-## Step 5:  Go inside of the container, where model and data are saved. Replace <container-id> with yours.
+## Step 5:  Go inside of the container, where model and data are saved. 
+
+Replace < container-id > with yours container-id.
 
 ```
 docker commit <container-id> mysnapshot
