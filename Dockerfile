@@ -1,8 +1,8 @@
 # Use tensorflow gpu version as base image
 FROM tensorflow/tensorflow:latest-gpu
 
-WORKDIR /MindStepWP4_5
-COPY . /MindStepWP4_5
+WORKDIR /DockerMindStep
+COPY . /DockerMindStep
 RUN chmod a+x run.sh
 
 RUN python -m pip install --upgrade pip
