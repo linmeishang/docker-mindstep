@@ -10,8 +10,6 @@ RUN pip install pipenv
 RUN pip install --upgrade protobuf
 RUN pip install openpyxl
 RUN pip install pandas pyarrow
-RUN pip install gdxcc
-
 
 RUN pip install -r requirements.txt
 
