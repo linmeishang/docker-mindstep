@@ -63,12 +63,12 @@ Go to the DataPreparation folder using cd command:
 cd DataPreparation
 ```
 
-Then use ls command cd command to navigate to the newly created folder DataPreparation_YYYYMMDDhhmm and Model_YYYYMMDDhhmm, where the trained model is saved.
+Then use ls command and cd command to navigate to the newly created folder DataPreparation_YYYYMMDDhhmm and Model_YYYYMMDDhhmm, where the trained model is saved.
 
 
 ## Step 7:  Copy everything in this container. 
 
-You have to jump out from the container first using:
+You have to jump out from the container first by using:
 
 ```
 exit
