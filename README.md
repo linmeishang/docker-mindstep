@@ -22,7 +22,7 @@ git clone https://github.com/linmeishang/docker-mindstep.git
 ```
 
 
-## Step 2: Build docker image using this repository. Make sure your current working directory is DockerMindStep.
+## Step 2: Build docker image using this repository. Make sure your current working directory is "docker-mindstep", where the Dockerfile is directly located.
 ```
 docker build .
 ```
@@ -38,6 +38,8 @@ docker run <image-id>
 ```
 docker ps -all 
 ```
+
+Step 5 - Step 7 help you to navigate into the container to check if everything works as expected. You can also skip them and directly jump to Step 8. 
 
 ## Step 5:  Go inside of the container, where model and data are saved. Replace <container-id> with yours.
 
@@ -65,16 +67,15 @@ cd DataPreparation
 
 Then use ls command and cd command to navigate to the newly created folder DataPreparation_YYYYMMDDhhmm and Model_YYYYMMDDhhmm, where the trained model is saved.
 
-
-## Step 7:  Copy everything in this container. 
-
-You have to jump out from the container first by using:
+## Step 7:  Jump out from the container. 
 
 ```
 exit
 ```
 
-Then copy the whole container to your home directory under the folder "Container". Replace < container-id > with yours. 
+## Step 8:  Copy the whole container to your home directory under the folder "Container"  to better ultilize the saved files. 
+
+Replace < container-id > with yours. 
 
 ```
 docker cp <container-id>:/DockerMindStep ~/Container
