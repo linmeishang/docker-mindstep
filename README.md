@@ -50,6 +50,20 @@ docker run -t -i mysnapshot /bin/bash
 ```
 
 ## Step 6:  Now you are inside the container. Use "ls" and "cd" command to switch the directory and check if the trained models and save data are there.
+```
+ls
+```
+You should see the following files/folders:
+
+DataCollection  DataPreparation  Dockerfile  README.md  data_preparation.py  requirements.txt  run.sh  train.py
+
+Go to the DataPreparation folder using cd command:
+
+```
+cd DataPreparation
+```
+
+Then use ls command cd command to navigate to the newly created folder DataPreparation_YYYYMMDDhhmm and Model_YYYYMMDDhhmm, where the trained model is saved.
 
 
 ## Step 7:  Copy everything in this container. 
@@ -60,7 +74,7 @@ You have to jump out from the container first using:
 exit
 ```
 
-Then copy the whole container to your home directory under the folder "Container". Replace <container-id> with yours. 
+Then copy the whole container to your home directory under the folder "Container". Replace < container-id > with yours. 
 
 ```
 docker cp <container-id>:/DockerMindStep ~/Container
